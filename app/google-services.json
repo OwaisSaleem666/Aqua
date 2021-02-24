@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "886528089221",
+    "project_id": "aqua-e79ce",
+    "storage_bucket": "aqua-e79ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:886528089221:android:c515bee351c84f47381dec",
+        "android_client_info": {
+          "package_name": "com.example.aqua"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "886528089221-rd657jajnot217dg21v3rb1otp7mj3jl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCP4bRTPBLdwpthMamrBXuOacN96zge1fU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "886528089221-rd657jajnot217dg21v3rb1otp7mj3jl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

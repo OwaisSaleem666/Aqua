@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SignUp_Activity">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/linear_layout">
+
+
+    <ImageView
+        android:id="@+id/singinimg"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/register"/>
+
+    <EditText
+
+       android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/name"
+        android:hint="Name"
+        android:backgroundTint="@color/color"
+        android:drawableLeft="@drawable/person_24"
+        android:drawablePadding="20dp"></EditText>
+    <EditText
+
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/username"
+        android:hint="User Name"
+        android:backgroundTint="@color/color"
+        android:drawableLeft="@drawable/person_24"
+        android:drawablePadding="20dp"></EditText>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/email"
+        android:layout_marginRight="20dp"
+        android:hint="Email"
+        android:backgroundTint="@color/color"
+        android:drawableLeft="@drawable/emailicon"
+        android:drawablePadding="20dp"></EditText>
+
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:id="@+id/phone"
+        android:hint="Phone"
+        android:backgroundTint="@color/color"
+        android:drawableLeft="@drawable/call_24"
+        android:drawablePadding="20dp"></EditText>
+
+    <EditText
+
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Password"
+        android:id="@+id/password"
+        android:backgroundTint="@color/color"
+        android:drawableLeft="@drawable/passlock_24"
+        android:drawablePadding="20dp"></EditText>
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="Confirm"
+        android:onClick="signup"
+        android:textColor="#fff"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttons"
+        style="@style/Widget.AppCompat.Button.Colored"
+        ></Button>
+
+
+    <Button
+        android:id="@+id/textButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="navtosignin"
+        android:text="Already have an account"
+        style="@style/Widget.MaterialComponents.Button.TextButton"
+        />
+
+
+</LinearLayout>
+</ScrollView>

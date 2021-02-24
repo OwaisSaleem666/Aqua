@@ -1,0 +1,384 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.aqua"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="23"
+8-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="30" />
+9-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml
+10    <!--
+11         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+12         Google Maps Android API v2, but you must specify either coarse or fine
+13         location permissions for the "MyLocation" functionality.
+14    -->
+15    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+15-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:9:5-79
+15-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:9:22-76
+16    <uses-permission android:name="android.permission. ACCESS_COARSE_LOCATION" />
+16-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:10:5-82
+16-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:10:22-79
+17    <uses-permission android:name="android.permission.INTERNET" />
+17-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:11:5-67
+17-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:11:22-64
+18    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+18-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:12:5-76
+18-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:12:22-73
+19    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+19-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:13:5-79
+19-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:13:22-76
+20
+21    <uses-feature
+21-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:26:5-28:35
+22        android:glEsVersion="0x00020000"
+22-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:27:9-41
+23        android:required="true" />
+23-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:28:9-32
+24
+25    <application
+25-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:15:5-64:19
+26        android:allowBackup="true"
+26-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:16:9-35
+27        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+27-->[androidx.core:core:1.3.1] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\6a773b42e98d21dcaff633a6ca9773c5\core-1.3.1\AndroidManifest.xml:24:18-86
+28        android:debuggable="true"
+29        android:extractNativeLibs="false"
+30        android:icon="@mipmap/ic_launcher"
+30-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:17:9-43
+31        android:label="@string/app_name"
+31-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:18:9-41
+32        android:networkSecurityConfig="@xml/network_security_config"
+32-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:19:9-69
+33        android:roundIcon="@mipmap/ic_launcher_round"
+33-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:20:9-54
+34        android:supportsRtl="true"
+34-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:21:9-35
+35        android:testOnly="true"
+36        android:theme="@style/Theme.Aqua"
+36-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:22:9-42
+37        android:usesCleartextTraffic="true" >
+37-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:23:9-44
+38        <activity android:name="com.example.aqua.MAP" />
+38-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:24:9-50
+38-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:24:19-38
+39        <!--
+40             The API key for Google Maps-based APIs is defined as a string resource.
+41             (See the file "res/values/google_maps_api.xml").
+42             Note that the API key is linked to the encryption key used to sign the APK.
+43             You need a different API key for each encryption key, including the release key that is used to
+44             sign the APK for publishing.
+45             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+46        -->
+47        <meta-data
+47-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:33:9-35:47
+48            android:name="com.google.android.geo.API_KEY"
+48-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:34:13-58
+49            android:value="@string/map_key" />
+49-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:35:13-44
+50        <!-- android:value="AIzaSyBmGFWbWfwXWh7x92XkNhEG9t7jZAtVY0s" -->
+51        <activity
+51-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:37:9-39:59
+52            android:name="com.example.aqua.dashboard"
+52-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:38:13-38
+53            android:label="@string/title_activity_maps" />
+53-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:39:13-56
+54        <activity android:name="com.example.aqua.DropOffLocation_Activity" />
+54-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:40:9-62
+54-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:40:19-59
+55        <activity android:name="com.example.aqua.MainActivity" />
+55-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:41:9-50
+55-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:41:19-47
+56        <activity android:name="com.example.aqua.services" />
+56-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:42:9-46
+56-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:42:19-43
+57        <activity android:name="com.example.aqua.cartconfiirm" />
+57-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:43:9-50
+57-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:43:19-47
+58        <activity android:name="com.example.aqua.produtcard" />
+58-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:44:9-48
+58-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:44:19-45
+59        <activity android:name="com.example.aqua.productdetail" />
+59-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:45:9-51
+59-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:45:19-48
+60        <activity android:name="com.example.aqua.productsearch" />
+60-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:46:9-51
+60-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:46:19-48
+61        <activity android:name="com.example.aqua.shops" />
+61-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:47:9-43
+61-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:47:19-40
+62        <activity android:name="com.example.aqua.delivery" />
+62-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:48:9-46
+62-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:48:19-43
+63        <activity android:name="com.example.aqua.wallet" />
+63-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:49:9-44
+63-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:49:19-41
+64        <activity android:name="com.example.aqua.verify" />
+64-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:50:9-44
+64-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:50:19-41
+65        <activity android:name="com.example.aqua.confirmlocation" />
+65-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:51:9-53
+65-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:51:19-50
+66        <activity android:name="com.example.aqua.Setlocation" />
+66-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:52:9-49
+66-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:52:19-46
+67        <activity android:name="com.example.aqua.SignUp_Activity" />
+67-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:53:9-53
+67-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:53:19-50
+68        <activity android:name="com.example.aqua.button" />
+68-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:54:9-44
+68-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:54:19-41
+69        <activity android:name="com.example.aqua.cart" />
+69-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:55:9-42
+69-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:55:19-39
+70        <activity android:name="com.example.aqua.Cancelride" />
+70-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:56:9-48
+70-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:56:19-45
+71        <activity android:name="com.example.aqua.rides" >
+71-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:57:9-63:20
+71-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:57:19-40
+72            <intent-filter>
+72-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:58:13-62:29
+73                <action android:name="android.intent.action.MAIN" />
+73-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:59:17-69
+73-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:59:25-66
+74
+75                <category android:name="android.intent.category.LAUNCHER" />
+75-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:61:17-77
+75-->C:\Users\owais\AndroidStudioProjects\Aqua\Aqua\app\src\main\AndroidManifest.xml:61:27-74
+76            </intent-filter>
+77        </activity>
+78        <activity
+78-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:14:9-20:20
+79            android:name="com.google.android.libraries.places.widget.AutocompleteActivity"
+79-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:15:13-91
+80            android:exported="false"
+80-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:16:13-37
+81            android:label="@string/places_autocomplete_label"
+81-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:17:13-62
+82            android:theme="@style/PlacesAutocompleteOverlay"
+82-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:18:13-61
+83            android:windowSoftInputMode="adjustResize" >
+83-->[com.google.android.libraries.places:places:2.4.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\ad0cc188010550c39e348f4703764ec4\jetified-places-2.4.0\AndroidManifest.xml:19:13-55
+84        </activity> <!-- Needs to be explicitly declared on P+ -->
+85        <uses-library
+85-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:33:9-35:40
+86            android:name="org.apache.http.legacy"
+86-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:34:13-50
+87            android:required="false" />
+87-->[com.google.android.gms:play-services-maps:17.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\06e2bdb8d8a8e821cc9186af16df6cc6\jetified-play-services-maps-17.0.0\AndroidManifest.xml:35:13-37
+88
+89        <activity
+89-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:27:9-44:20
+90            android:name="com.google.firebase.auth.internal.GenericIdpActivity"
+90-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:28:13-80
+91            android:excludeFromRecents="true"
+91-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:29:13-46
+92            android:exported="true"
+92-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:30:13-36
+93            android:launchMode="singleTask"
+93-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:31:13-44
+94            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+94-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:32:13-72
+95            <intent-filter>
+95-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:33:13-43:29
+96                <action android:name="android.intent.action.VIEW" />
+96-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:34:17-69
+96-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:34:25-66
+97
+98                <category android:name="android.intent.category.DEFAULT" />
+98-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:17-76
+98-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:27-73
+99                <category android:name="android.intent.category.BROWSABLE" />
+99-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:37:17-78
+99-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:37:27-75
+100
+101                <data
+101-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:39:17-42:51
+102                    android:host="firebase.auth"
+102-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:40:21-49
+103                    android:path="/"
+103-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:41:21-37
+104                    android:scheme="genericidp" />
+104-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:42:21-48
+105            </intent-filter>
+106        </activity>
+107        <activity
+107-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:45:9-62:20
+108            android:name="com.google.firebase.auth.internal.RecaptchaActivity"
+108-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:46:13-79
+109            android:excludeFromRecents="true"
+109-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:47:13-46
+110            android:exported="true"
+110-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:48:13-36
+111            android:launchMode="singleTask"
+111-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:49:13-44
+112            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+112-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:50:13-72
+113            <intent-filter>
+113-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:51:13-61:29
+114                <action android:name="android.intent.action.VIEW" />
+114-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:34:17-69
+114-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:34:25-66
+115
+116                <category android:name="android.intent.category.DEFAULT" />
+116-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:17-76
+116-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:27-73
+117                <category android:name="android.intent.category.BROWSABLE" />
+117-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:37:17-78
+117-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:37:27-75
+118
+119                <data
+119-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:39:17-42:51
+120                    android:host="firebase.auth"
+120-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:40:21-49
+121                    android:path="/"
+121-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:41:21-37
+122                    android:scheme="recaptcha" />
+122-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:42:21-48
+123            </intent-filter>
+124        </activity>
+125
+126        <service
+126-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:64:9-73:19
+127            android:name="com.google.firebase.auth.api.fallback.service.FirebaseAuthFallbackService"
+127-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:65:13-101
+128            android:enabled="true"
+128-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:66:13-35
+129            android:exported="false" >
+129-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:67:13-37
+130            <intent-filter>
+130-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:68:13-72:29
+131                <action android:name="com.google.firebase.auth.api.gms.service.START" />
+131-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:69:17-89
+131-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:69:25-86
+132
+133                <category android:name="android.intent.category.DEFAULT" />
+133-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:17-76
+133-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:36:27-73
+134            </intent-filter>
+135        </service>
+136        <service
+136-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:74:9-80:19
+137            android:name="com.google.firebase.components.ComponentDiscoveryService"
+137-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:75:13-84
+138            android:directBootAware="true"
+138-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:35:13-43
+139            android:exported="false" >
+139-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:76:13-37
+140            <meta-data
+140-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:77:13-79:85
+141                android:name="com.google.firebase.components:com.google.firebase.auth.FirebaseAuthRegistrar"
+141-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:78:17-109
+142                android:value="com.google.firebase.components.ComponentRegistrar" />
+142-->[com.google.firebase:firebase-auth:20.0.2] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\10b4ba7ae6279f7a0077801d25a07de5\jetified-firebase-auth-20.0.2\AndroidManifest.xml:79:17-82
+143            <!--
+144                This registrar is not defined in the dynamic-module-support sdk itself to allow non-firebase
+145                clients to use it as well, by defining this registrar in their own core/common library.
+146            -->
+147            <meta-data
+147-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:43:13-45:85
+148                android:name="com.google.firebase.components:com.google.firebase.dynamicloading.DynamicLoadingRegistrar"
+148-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:44:17-121
+149                android:value="com.google.firebase.components.ComponentRegistrar" />
+149-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:45:17-82
+150        </service>
+151
+152        <activity
+152-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:23:9-27:75
+153            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+153-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:24:13-93
+154            android:excludeFromRecents="true"
+154-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:25:13-46
+155            android:exported="false"
+155-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:26:13-37
+156            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+156-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:27:13-72
+157        <!--
+158            Service handling Google Sign-In user revocation. For apps that do not integrate with
+159            Google Sign-In, this service will never be started.
+160        -->
+161        <service
+161-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:33:9-37:51
+162            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+162-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:34:13-89
+163            android:exported="true"
+163-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:35:13-36
+164            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION"
+164-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:36:13-107
+165            android:visibleToInstantApps="true" />
+165-->[com.google.android.gms:play-services-auth:19.0.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9b06dda72e0b30252c3089d3ab92d034\jetified-play-services-auth-19.0.0\AndroidManifest.xml:37:13-48
+166
+167        <provider
+167-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:26:9-31:39
+168            android:name="com.google.firebase.provider.FirebaseInitProvider"
+168-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:27:13-77
+169            android:authorities="com.example.aqua.firebaseinitprovider"
+169-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:28:13-72
+170            android:directBootAware="true"
+170-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:29:13-43
+171            android:exported="false"
+171-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:30:13-37
+172            android:initOrder="100" />
+172-->[com.google.firebase:firebase-common:19.5.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5a7ec12c4d2da2ebcafa9c30feb63cfc\jetified-firebase-common-19.5.0\AndroidManifest.xml:31:13-36
+173
+174        <activity
+174-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9d084f35992f51f4167246592b6820f0\jetified-play-services-base-17.3.0\AndroidManifest.xml:23:9-26:75
+175            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+175-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9d084f35992f51f4167246592b6820f0\jetified-play-services-base-17.3.0\AndroidManifest.xml:24:13-79
+176            android:exported="false"
+176-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9d084f35992f51f4167246592b6820f0\jetified-play-services-base-17.3.0\AndroidManifest.xml:25:13-37
+177            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+177-->[com.google.android.gms:play-services-base:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\9d084f35992f51f4167246592b6820f0\jetified-play-services-base-17.3.0\AndroidManifest.xml:26:13-72
+178
+179        <meta-data
+179-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\b4ee7206a97999fbfdd6c0e1bfc89916\jetified-play-services-basement-17.3.0\AndroidManifest.xml:23:9-25:69
+180            android:name="com.google.android.gms.version"
+180-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\b4ee7206a97999fbfdd6c0e1bfc89916\jetified-play-services-basement-17.3.0\AndroidManifest.xml:24:13-58
+181            android:value="@integer/google_play_services_version" />
+181-->[com.google.android.gms:play-services-basement:17.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\b4ee7206a97999fbfdd6c0e1bfc89916\jetified-play-services-basement-17.3.0\AndroidManifest.xml:25:13-66
+182
+183        <service
+183-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:29:9-35:19
+184            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+184-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:30:13-103
+185            android:exported="false" >
+185-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:31:13-37
+186            <meta-data
+186-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:32:13-34:39
+187                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+187-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:33:17-94
+188                android:value="cct" />
+188-->[com.google.android.datatransport:transport-backend-cct:2.3.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\5b357dd9ce877b8f512bfed28560475d\jetified-transport-backend-cct-2.3.0\AndroidManifest.xml:34:17-36
+189        </service>
+190        <service
+190-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:26:9-30:19
+191            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+191-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:27:13-117
+192            android:exported="false"
+192-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:28:13-37
+193            android:permission="android.permission.BIND_JOB_SERVICE" >
+193-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:29:13-69
+194        </service>
+195
+196        <receiver
+196-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:32:9-34:40
+197            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+197-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:33:13-132
+198            android:exported="false" />
+198-->[com.google.android.datatransport:transport-runtime:2.2.3] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\f43271a625af55c9a88fee15c4a06bb6\jetified-transport-runtime-2.2.3\AndroidManifest.xml:34:13-37
+199
+200        <provider
+200-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\c4b2c5997ad8a803c20e14f831a4db33\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+201            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+201-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\c4b2c5997ad8a803c20e14f831a4db33\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+202            android:authorities="com.example.aqua.lifecycle-process"
+202-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\c4b2c5997ad8a803c20e14f831a4db33\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+203            android:exported="false"
+203-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\c4b2c5997ad8a803c20e14f831a4db33\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+204            android:multiprocess="true" />
+204-->[androidx.lifecycle:lifecycle-process:2.1.0] C:\Users\owais\.gradle\caches\transforms-2\files-2.1\c4b2c5997ad8a803c20e14f831a4db33\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+205    </application>
+206
+207</manifest>

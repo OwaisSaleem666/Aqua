@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DropOffLocation_Activity">
+    <AutoCompleteTextView
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:id="@+id/dropoff_location"
+        android:paddingLeft="20dp"
+        android:hint="Search your location here"
+        android:background="@drawable/boders"></AutoCompleteTextView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/dropoff_location"
+        android:layout_above="@id/btndropoff"></ListView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btndropoff"
+        android:layout_alignParentBottom="true"
+        android:text="Confirm Dropoff Location"
+        android:background="@color/color"
+        android:textColor="@color/white"></Button>
+
+</RelativeLayout>

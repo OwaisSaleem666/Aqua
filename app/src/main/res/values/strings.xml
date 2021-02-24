@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Aqua</string>
+    <string name="title_activity_maps">Map</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="map_key" translatable="false">AIzaSyDq2JY20nHKZVof_c5MbZLdRK63L7stew0</string>
+    <string name="enter_source_location">Enter source loction</string>
+    <string name="enter_source_location1">Enter Source location</string>
+    <string name="enter_destination_location">Enter Destination location</string>
+</resources>

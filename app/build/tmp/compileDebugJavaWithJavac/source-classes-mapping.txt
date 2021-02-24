@@ -1,0 +1,69 @@
+com/example/aqua/SignUp_Activity.java
+ com.example.aqua.SignUp_Activity
+ com.example.aqua.SignUp_Activity$1
+ com.example.aqua.SignUp_Activity$2
+ com.example.aqua.SignUp_Activity$3
+ com.example.aqua.SignUp_Activity$GetTerrAdapter
+com/example/aqua/Setlocation.java
+ com.example.aqua.Setlocation
+com/example/aqua/cart.java
+ com.example.aqua.cart
+com/example/aqua/services.java
+ com.example.aqua.services
+com/example/aqua/Cancelride.java
+ com.example.aqua.Cancelride
+com/example/aqua/productdetail.java
+ com.example.aqua.productdetail
+com/example/aqua/wallet.java
+ com.example.aqua.wallet
+com/example/aqua/delivery.java
+ com.example.aqua.delivery
+com/example/aqua/produtcard.java
+ com.example.aqua.produtcard
+com/example/aqua/BuildConfig.java
+ com.example.aqua.BuildConfig
+com/example/aqua/DropOffLocation_Activity.java
+ com.example.aqua.DropOffLocation_Activity
+com/example/aqua/confirmlocation.java
+ com.example.aqua.confirmlocation
+com/example/aqua/cartconfiirm.java
+ com.example.aqua.cartconfiirm
+com/example/aqua/dashboard.java
+ com.example.aqua.dashboard
+ com.example.aqua.dashboard$1
+ com.example.aqua.dashboard$2
+ com.example.aqua.dashboard$3
+ com.example.aqua.dashboard$4
+ com.example.aqua.dashboard$5
+ com.example.aqua.dashboard$6
+com/example/aqua/shops.java
+ com.example.aqua.shops
+ com.example.aqua.shops$1
+ com.example.aqua.shops$2
+ com.example.aqua.shops$ShopsAdapter
+com/example/aqua/Territories.java
+ com.example.aqua.Territories
+com/example/aqua/MainActivity.java
+ com.example.aqua.MainActivity
+ com.example.aqua.MainActivity$1
+ com.example.aqua.MainActivity$2
+ com.example.aqua.MainActivity$3
+com/example/aqua/Shopsrecord.java
+ com.example.aqua.Shopsrecord
+com/example/aqua/verify.java
+ com.example.aqua.verify
+com/example/aqua/productsearch.java
+ com.example.aqua.productsearch
+com/example/aqua/button.java
+ com.example.aqua.button
+com/example/aqua/MAP.java
+ com.example.aqua.MAP
+ com.example.aqua.MAP$1
+ com.example.aqua.MAP$2
+ com.example.aqua.MAP$3
+ com.example.aqua.MAP$4
+com/example/aqua/rides.java
+ com.example.aqua.rides
+ com.example.aqua.rides$1
+ com.example.aqua.rides$2
+ com.example.aqua.rides$3

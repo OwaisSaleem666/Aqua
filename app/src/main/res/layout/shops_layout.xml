@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/boders"
+            android:padding="10dp"
+            android:orientation="vertical"
+            >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/imgshop"
+                android:background="@color/color"
+                android:src="@drawable/shopcover"
+                android:scaleType="centerCrop"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="Shop Name"
+                        android:id="@+id/txtshop"
+                        android:textSize="30dp"
+                        android:paddingLeft="5dp"
+                        />
+                    <TextView
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:text="oooh bhai hm logo ko pagal bnate hain hmare pas koi kaam ki chiz nhi to niklo yaha s"
+                        android:textSize="15dp"
+                        android:id="@+id/txtdescshop"
+                        android:paddingLeft="5dp"
+                        />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    >
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Visit"
+                        android:id="@+id/btnvisitprods"
+                        android:layout_gravity="center"
+                        android:textColor="#fff"
+                        android:layout_marginTop="100px"
+                        android:background="@drawable/buttons"
+                        style="@style/Widget.AppCompat.Button.Colored"
+                        ></Button>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+</LinearLayout>
+</LinearLayout>

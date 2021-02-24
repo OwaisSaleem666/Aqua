@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".wallet">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wallet"
+        android:textSize="35dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/boders"
+
+        android:layout_margin="30dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Cash"
+            android:textSize="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5,000"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            />
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Payment Method"
+        android:textSize="35dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <TextView
+        
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Easypaisa"
+        android:drawableLeft="@drawable/easypaisa1"
+        android:textSize="28dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Debit Card"
+        android:drawableLeft="@drawable/dabitcard"
+        android:textSize="28dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Via Cash"
+        android:drawableLeft="@drawable/cashicon"
+        android:textSize="28dp"
+        android:drawablePadding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        />
+
+
+
+
+</LinearLayout>

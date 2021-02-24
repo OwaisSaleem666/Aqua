@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Setlocation">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:background="@drawable/boders"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Set Pickup Location"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            />
+        <EditText
+            android:background="@drawable/boders"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:hint="Set Drop Location"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="8dp"
+            />
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:text="Confirm"
+        android:textColor="#fff"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/buttons"
+        ></Button>
+
+
+
+
+</RelativeLayout>
