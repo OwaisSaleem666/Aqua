@@ -43,8 +43,15 @@ public class MAP extends FragmentActivity implements OnMapReadyCallback {
     Button btnConfirm;
     Location currentLocation;
     FusedLocationProviderClient fusedLocationProviderClient;
+    String status = "false";
+    String et = "";
+    String destinationStatus = "false";
+    String etSourceLat;
+    String etSourceLong;
+    String etDestinationLat;
+    String etDestinationLong;
+
     private final static int REQUEST_CODE = 101;
-    public boolean status = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -81,36 +88,16 @@ public class MAP extends FragmentActivity implements OnMapReadyCallback {
 
             @Override
             public void onClick(View view) {
-                //Initialize place field list
-                List<Place.Field> fieldList = Arrays.asList(Place.Field.ADDRESS
-                        ,Place.Field.LAT_LNG,Place.Field.NAME);
-                //Create intent
-                Intent intent = new Autocomplete.IntentBuilder(AutocompleteActivityMode.OVERLAY
-                        ,fieldList).build(MAP.this);
+                    //Initialize place field list
+                    List<Place.Field> fieldList = Arrays.asList(Place.Field.ADDRESS
+                            ,Place.Field.LAT_LNG,Place.Field.NAME);
+                    //Create intent
+                    Intent intent = new Autocomplete.IntentBuilder(AutocompleteActivityMode.OVERLAY
+                            ,fieldList).build(MAP.this);
 
-                //Start activity result
-                startActivityForResult(intent,100);
-                 Toast.makeText(MAP.this, "clicked", Toast.LENGTH_SHORT).show();
-
-//                String address = etSource.toString();
-//
-//                List<Address> addressList = null;
-//
-//                if (TextUtils.isEmpty(address)) {
-//                    Geocoder geocoder = new Geocoder(getApplicationContext());
-//                    try {
-//                        addressList = geocoder.getFromLocationName(address,6);
-//                    } catch (IOException e)
-//                    {
-//                        e.printStackTrace();
-//                    }
-//                    Address address1 = addressList.get(0);
-//
-//                    LatLng latLng = new LatLng(address1.getLatitude(),address1.getLongitude());
-//                    MarkerOptions markerOptions = new MarkerOptions().position(latLng).title(address);
-//
-//                }
-
+                    //Start activity result
+                    startActivityForResult(intent,100);
+                    et = "etSource";
             }
         });
 
@@ -120,15 +107,17 @@ public class MAP extends FragmentActivity implements OnMapReadyCallback {
             @Override
             public void onClick(View view) {
                 //Initialize place field list
-                List<Place.Field> fieldList = Arrays.asList(Place.Field.ADDRESS
+                List<Place.Field> fieldList2 = Arrays.asList(Place.Field.ADDRESS
                         ,Place.Field.LAT_LNG,Place.Field.NAME);
 
                 //Create intent
-                Intent intent = new Autocomplete.IntentBuilder(AutocompleteActivityMode.OVERLAY
-                        ,fieldList).build(MAP.this);
+                Intent intent2 = new Autocomplete.IntentBuilder(AutocompleteActivityMode.OVERLAY
+                        ,fieldList2).build(MAP.this);
 
                 //Start activity result
-                startActivityForResult(intent,100);
+                startActivityForResult(intent2,200);
+                Toast.makeText(MAP.this, "You have clicked on etDestination", Toast.LENGTH_SHORT).show();
+                et = "etDestination";
             }
         });
     }
@@ -136,20 +125,57 @@ public class MAP extends FragmentActivity implements OnMapReadyCallback {
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if (resultCode == 100 && resultCode == RESULT_OK){
+        if (et == "etSource" && resultCode == RESULT_OK){
             //When success
             //Initialize place
             Place place = Autocomplete.getPlaceFromIntent(data);
             //Set Address on EditText
+
             etSource.setText(place.getAddress());
+            etSource.setText(String.format(place.getName()));
+            //etSource.setText(String.valueOf(place.getLatLng()));
+
+            //Toast.makeText(this, "Lat/Lng"+place.getLatLng(), Toast.LENGTH_SHORT).show();
+
+            etSourceLat = String.valueOf(place.getLatLng().latitude);
+            etSourceLong = String.valueOf(place.getLatLng().longitude);
+//            String etSourceAddress = place.getAddress();
+//
+            Toast.makeText(this, ""+etSourceLat, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, ""+etSourceLong, Toast.LENGTH_SHORT).show();
+
+            LatLng latLng = new LatLng(Double.parseDouble(etSourceLat), Double.parseDouble(etSourceLong));
+            MarkerOptions markerOptions = new MarkerOptions().position(latLng).title("Source Location");
+
+            status = "true";
+            if(status == "true")
+            {
+                fetchLastLocation();
+                et = "";
+            }
+
+
+        }
+        else if(et == "etDestination" && resultCode == RESULT_OK)
+        {
+            //When success
+            //Initialize place
+            Place place = Autocomplete.getPlaceFromIntent(data);
             etDestination.setText(place.getAddress());
+            etDestination.setText(String.format(place.getName()));
+//            etDestination.setText(String.valueOf(place.getLatLng()));
+            etDestinationLat = String.valueOf(place.getLatLng().latitude);
+            etDestinationLong = String.valueOf(place.getLatLng().longitude);
 
-            //Set Locality name
-            etSource.setText(String.format("Locality Name : %s",place.getName()));
-            //Set Latitude and Longitude
-            etSource.setText(String.valueOf(place.getLatLng()));
+            LatLng latLng1 = new LatLng(Double.parseDouble(etDestinationLat), Double.parseDouble(etDestinationLong));
+            MarkerOptions markerOptions1 = new MarkerOptions().position(latLng1).title("Destination Location");
 
-            Toast.makeText(this, "View"+ place.getName(), Toast.LENGTH_SHORT).show();
+            status = "destination";
+            if(status == "destination")
+            {
+                fetchLastLocation();
+                et = "";
+            }
         }
         else if (resultCode == AutocompleteActivity.RESULT_ERROR){
             //When error
@@ -186,11 +212,33 @@ public class MAP extends FragmentActivity implements OnMapReadyCallback {
     }
     @Override
     public void onMapReady(GoogleMap googleMap) {
-            LatLng latlng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
-            MarkerOptions markerOptions = new MarkerOptions().position(latlng).title("I am here");
-            googleMap.animateCamera(CameraUpdateFactory.newLatLng(latlng));
-            googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 20));
-            googleMap.addMarker(markerOptions);
+//FOR CURRENT LOCATION
+            if(status == "false")
+            {
+                LatLng latlng = new LatLng(currentLocation.getLatitude(), currentLocation.getLongitude());
+                MarkerOptions markerOptions = new MarkerOptions().position(latlng).title("I am here");
+                googleMap.animateCamera(CameraUpdateFactory.newLatLng(latlng));
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 15));
+                googleMap.addMarker(markerOptions);
+            }
+//FOR SOURCE
+            else if(status == "true")
+            {
+                LatLng latlng = new LatLng(Double.parseDouble(etSourceLat), Double.parseDouble(etSourceLong));
+                MarkerOptions markerOptions = new MarkerOptions().position(latlng).title("I am here");
+                googleMap.animateCamera(CameraUpdateFactory.newLatLng(latlng));
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 15));
+                googleMap.addMarker(markerOptions);
+            }
+//FOR DESTINATION
+            else if(status == "destination")
+            {
+                LatLng latlng = new LatLng(Double.parseDouble(etDestinationLat), Double.parseDouble(etDestinationLong));
+                MarkerOptions markerOptions = new MarkerOptions().position(latlng).title("I am here");
+                googleMap.animateCamera(CameraUpdateFactory.newLatLng(latlng));
+                googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latlng, 15));
+                googleMap.addMarker(markerOptions);
+            }
 
     }
 

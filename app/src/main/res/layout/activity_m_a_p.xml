@@ -37,7 +37,6 @@
             android:padding="16dp"
             android:id="@+id/et_destination"/>
 
-
     </LinearLayout>
 
     <Button
@@ -52,7 +51,5 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:textColor="@color/white"/>
-
-
 
 </RelativeLayout>
